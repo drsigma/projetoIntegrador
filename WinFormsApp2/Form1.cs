@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,7 +14,7 @@ namespace WinFormsApp2
     public partial class Form1 : Form
     {
         private TextBox[,] matriz;
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -34,7 +35,7 @@ namespace WinFormsApp2
 
             calculadora.Click += (object sender, EventArgs e) =>
             {
-                Calculadora  calc= new Calculadora();
+                Calculadora calc = new Calculadora();
                 calc.Show();
             };
 
@@ -44,7 +45,7 @@ namespace WinFormsApp2
                 rtres.Show();
             };
         }
-   
+
         private float[,] PopulaMatriz(int coluna, int linha)
         {
             float[,] matrizN;
@@ -62,7 +63,7 @@ namespace WinFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            try { 
             panel1.Controls.Clear();
 
             Button calculadora = new Button();
@@ -1113,6 +1114,8 @@ namespace WinFormsApp2
              panel1.Controls.Add(MatrizMultiplica);
          };
             panel1.Controls.Add(gerarbtn);
+          }
+            catch (Exception er) { MessageBox.Show("Algo Digitado Errado"); }
         }
 
      }
