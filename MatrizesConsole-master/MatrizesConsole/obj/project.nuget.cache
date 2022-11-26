@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "egV9+5wPsCYsUb/QjRCKW1egTc5LYLxWSnc8OK2rzY65g35wqU7bvueHfPnDip3GN872iwNg2bflPsSYk8aKsg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rafa\\Desktop\\MatrizesConsole-master\\MatrizesConsole\\MatrizesConsole.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rafa\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

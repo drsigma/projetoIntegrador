@@ -1,0 +1,16 @@
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\bin\Debug\net5.0\MatrizesConsole.exe
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\bin\Debug\net5.0\MatrizesConsole.deps.json
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\bin\Debug\net5.0\MatrizesConsole.runtimeconfig.json
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\bin\Debug\net5.0\MatrizesConsole.runtimeconfig.dev.json
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\bin\Debug\net5.0\MatrizesConsole.dll
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\bin\Debug\net5.0\MatrizesConsole.pdb
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\obj\Debug\net5.0\MatrizesConsole.csproj.AssemblyReference.cache
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\obj\Debug\net5.0\MatrizesConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\obj\Debug\net5.0\MatrizesConsole.AssemblyInfoInputs.cache
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\obj\Debug\net5.0\MatrizesConsole.AssemblyInfo.cs
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\obj\Debug\net5.0\MatrizesConsole.csproj.CoreCompileInputs.cache
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\obj\Debug\net5.0\MatrizesConsole.dll
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\obj\Debug\net5.0\refint\MatrizesConsole.dll
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\obj\Debug\net5.0\MatrizesConsole.pdb
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\obj\Debug\net5.0\MatrizesConsole.genruntimeconfig.cache
+C:\Users\rafa\Desktop\MatrizesConsole-master\MatrizesConsole\obj\Debug\net5.0\ref\MatrizesConsole.dll
