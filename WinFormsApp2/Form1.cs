@@ -13,38 +13,10 @@ namespace WinFormsApp2
     public partial class Form1 : Form
     {
         private TextBox[,] matriz;
-        
         public Form1()
         {
             InitializeComponent();
-            Button calculadora = new Button();
-            calculadora.Text = "Calculadora Simples";
-            calculadora.Name = "calc";
-            calculadora.Location = new Point(699, 426);
-            calculadora.Size = new Size(229, 69);
-            calculadora.BackColor = SystemColors.ControlDark;
-            Button regraTres = new Button();
-            regraTres.Text = "Regra de Três ";
-            regraTres.Name = "tres";
-            regraTres.Location = new Point(699, 526);
-            regraTres.Size = new Size(229, 69);
-            regraTres.BackColor = SystemColors.ControlDark;
-            panel1.Controls.Add(calculadora);
-            panel1.Controls.Add(regraTres);
-
-            calculadora.Click += (object sender, EventArgs e) =>
-            {
-                Calculadora  calc= new Calculadora();
-                calc.Show();
-            };
-
-            regraTres.Click += (object sender, EventArgs e) =>
-            {
-                RegraTres rtres = new RegraTres();
-                rtres.Show();
-            };
         }
-   
         private float[,] PopulaMatriz(int coluna, int linha)
         {
             float[,] matrizN;
@@ -59,39 +31,9 @@ namespace WinFormsApp2
             }
             return matrizN;
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-
             panel1.Controls.Clear();
-
-            Button calculadora = new Button();
-            calculadora.Text = "Calculadora Simples";
-            calculadora.Name = "calc";
-            calculadora.Location = new Point(899, 426);
-            calculadora.Size = new Size(229, 69);
-            calculadora.BackColor = SystemColors.ControlDark;
-            Button regraTres = new Button();
-
-
-            regraTres.Text = "Regra de Três ";
-            regraTres.Name = "tres";
-            regraTres.Location = new Point(899, 526);
-            regraTres.Size = new Size(229, 69);
-            regraTres.BackColor = SystemColors.ControlDark;
-            panel1.Controls.Add(calculadora);
-            panel1.Controls.Add(regraTres);
-            calculadora.Click += (object sender, EventArgs e) =>
-            {
-                Calculadora calc = new Calculadora();
-                calc.Show();
-            };
-
-            regraTres.Click += (object sender, EventArgs e) =>
-            {
-                RegraTres rtres = new RegraTres();
-                rtres.Show();
-            };
             Label label3 = new Label();
             label3.Text = "Matriz 1";
             label3.Name = "label3";
@@ -137,8 +79,6 @@ namespace WinFormsApp2
             panel1.Controls.Add(labellinhas);
             panel1.Controls.Add(colunastxt);
             panel1.Controls.Add(linhastxt);
-            panel1.Controls.Add(calculadora);
-            panel1.Controls.Add(regraTres);
             
 
 
@@ -272,8 +212,6 @@ namespace WinFormsApp2
              novaMatriz.Click += (object sender, EventArgs e) =>
              {
                  panel1.Controls.Clear();
-                 panel1.Controls.Add(calculadora);
-                 panel1.Controls.Add(regraTres);
                  Label label3 = new Label();
                  label3.Text = "CALCULAR MATRIZ";
                  label3.Name = "label3";
@@ -294,8 +232,6 @@ namespace WinFormsApp2
 
              };
              panel1.Controls.Add(novaMatriz);
-             panel1.Controls.Add(regraTres);
-             panel1.Controls.Add(calculadora);
              
              Button MatrizInversa = new Button();
              MatrizInversa.Width = 200;
@@ -379,8 +315,6 @@ namespace WinFormsApp2
                  float[,] matrizOriginal = new float[linhas, coluna];
                  matrizOriginal = PopulaMatriz(coluna, linhas);
                  panel1.Controls.Clear();
-                 panel1.Controls.Add(calculadora);
-                 panel1.Controls.Add(regraTres);
                  Label label3 = new Label();
                  label3.Text = "Matriz 2";
                  label3.Name = "label3";
@@ -427,13 +361,10 @@ namespace WinFormsApp2
                  panel1.Controls.Add(labellinhas);
                  panel1.Controls.Add(colunastxt);
                  panel1.Controls.Add(linhastxt);
-              
                  gerarbtn2.Click += (object sender, EventArgs e) =>
                  {
 
                      panel1.Controls.Clear();
-                     panel1.Controls.Add(calculadora);
-                     panel1.Controls.Add(regraTres);
 
                      Label label3 = new Label();
                      label3.Text = "Matriz 2";
@@ -504,7 +435,6 @@ namespace WinFormsApp2
                              label3.Location = new Point(356, 28);
                              label3.Size = new Size(118, 38);
                              panel1.Controls.Add(label3);
-                  
 
                              int coluna = matriz.GetLength(1);
                              int linhas = matriz.GetLength(0);
@@ -544,10 +474,6 @@ namespace WinFormsApp2
                              novaMatriz.Click += (object sender, EventArgs e) =>
                              {
                                  panel1.Controls.Clear();
-
-                                 panel1.Controls.Add(calculadora);
-                                 panel1.Controls.Add(regraTres);
-
                                  Label label3 = new Label();
                                  label3.Text = "CALCULAR MATRIZ";
                                  label3.Name = "label3";
@@ -568,8 +494,6 @@ namespace WinFormsApp2
 
                              };
                              panel1.Controls.Add(novaMatriz);
-                             panel1.Controls.Add(regraTres);
-                             panel1.Controls.Add(calculadora);
 
                          }
                          else
@@ -590,8 +514,6 @@ namespace WinFormsApp2
                                  label3.ForeColor = SystemColors.ControlLightLight;
                                  label3.Location = new Point(247, 28);
                                  label3.Size = new Size(315, 45);
-                                 panel1.Controls.Add(calculadora);
-                                 panel1.Controls.Add(regraTres);
 
                                  Button gerarbtn = new Button();
                                  gerarbtn.Text = "Gerar Matriz";
@@ -606,9 +528,6 @@ namespace WinFormsApp2
 
                              };
                              panel1.Controls.Add(novaMatriz);
-                             panel1.Controls.Add(regraTres);
-                             panel1.Controls.Add(calculadora);
-
                          }
                      };
                      panel1.Controls.Add(teste);
@@ -629,8 +548,6 @@ namespace WinFormsApp2
                  float[,] matrizOriginal = new float[linhas, coluna];
                  matrizOriginal = PopulaMatriz(coluna, linhas);
                  panel1.Controls.Clear();
-                 panel1.Controls.Add(calculadora);
-                 panel1.Controls.Add(regraTres);
                  Label label3 = new Label();
                  label3.Text = "Matriz 2";
                  label3.Name = "label3";
@@ -681,8 +598,6 @@ namespace WinFormsApp2
                  {
 
                      panel1.Controls.Clear();
-                     panel1.Controls.Add(calculadora);
-                     panel1.Controls.Add(regraTres);
 
                      Label label3 = new Label();
                      label3.Text = "Matriz 2";
@@ -753,8 +668,6 @@ namespace WinFormsApp2
                              label3.Location = new Point(356, 28);
                              label3.Size = new Size(118, 38);
                              panel1.Controls.Add(label3);
-                             panel1.Controls.Add(regraTres);
-                             panel1.Controls.Add(calculadora);
 
                              int coluna = matriz.GetLength(1);
                              int linhas = matriz.GetLength(0);
@@ -808,17 +721,12 @@ namespace WinFormsApp2
                                  gerarbtn.Size = new Size(229, 69);
                                  gerarbtn.Click += new EventHandler(this.button1_Click);
                                  gerarbtn.BackColor = SystemColors.ControlDark;
-                                 panel1.Controls.Add(regraTres);
-                                 panel1.Controls.Add(calculadora);
+
                                  panel1.Controls.Add(label3);
                                  panel1.Controls.Add(gerarbtn);
 
-
                              };
                              panel1.Controls.Add(novaMatriz);
-                             panel1.Controls.Add(regraTres);
-                             panel1.Controls.Add(calculadora);
-
 
                          }
 
@@ -854,8 +762,6 @@ namespace WinFormsApp2
 
                              };
                              panel1.Controls.Add(novaMatriz);
-                                          panel1.Controls.Add(regraTres);
-                             panel1.Controls.Add(calculadora);
                          }
                      };
                      panel1.Controls.Add(teste);
@@ -875,8 +781,6 @@ namespace WinFormsApp2
                  float[,] matrizOriginal = new float[linhas, coluna];
                  matrizOriginal = PopulaMatriz(coluna, linhas);
                  panel1.Controls.Clear();
-                 panel1.Controls.Add(calculadora);
-                 panel1.Controls.Add(regraTres);
                  Label label3 = new Label();
                  label3.Text = "Matriz 2";
                  label3.Name = "label3";
@@ -917,7 +821,7 @@ namespace WinFormsApp2
                  gerarbtn2.Size = new Size(229, 69);
                  gerarbtn2.BackColor = SystemColors.ControlDark;
 
-                 
+
                  panel1.Controls.Add(label3);
                  panel1.Controls.Add(labelcolunas);
                  panel1.Controls.Add(labellinhas);
@@ -926,10 +830,7 @@ namespace WinFormsApp2
                  gerarbtn2.Click += (object sender, EventArgs e) =>
                  {
 
-
                      panel1.Controls.Clear();
-                     panel1.Controls.Add(calculadora);
-                     panel1.Controls.Add(regraTres);
 
                      Label label3 = new Label();
                      label3.Text = "Matriz 2";
@@ -993,8 +894,6 @@ namespace WinFormsApp2
                                  }
                              }
                              panel1.Controls.Clear();
-                             panel1.Controls.Add(regraTres);
-                             panel1.Controls.Add(calculadora);
                              Label label3 = new Label();
                              label3.Text = "RESULTADO";
                              Font smallFont = new Font("Arial", 12);
@@ -1047,8 +946,6 @@ namespace WinFormsApp2
                                  Label label3 = new Label();
                                  label3.Text = "CALCULAR MATRIZ";
                                  label3.Name = "label3";
-                                 panel1.Controls.Add(regraTres);
-                                 panel1.Controls.Add(calculadora);
                                  label3.ForeColor = SystemColors.ControlLightLight;
                                  label3.Location = new Point(247, 28);
                                  label3.Size = new Size(315, 45);
@@ -1066,8 +963,6 @@ namespace WinFormsApp2
 
                              };
                              panel1.Controls.Add(novaMatriz);
-                             panel1.Controls.Add(regraTres);
-                             panel1.Controls.Add(calculadora);
                          }
                          else
                          {
@@ -1101,8 +996,6 @@ namespace WinFormsApp2
 
                              };
                              panel1.Controls.Add(novaMatriz);
-                             panel1.Controls.Add(regraTres);
-                             panel1.Controls.Add(calculadora);
                          }
                      };
                      panel1.Controls.Add(teste);
