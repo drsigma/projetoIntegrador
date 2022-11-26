@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dbuhQfpc5ZzdWC8NCCjxO0dZJwcQbBcqx/F/Y9W14VdGcGJ+2ur4gSWCQzm/SHU2z7ViyWAJWcoiQTG9Mpicrw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rafa\\Desktop\\WinFormsApp2-master\\WinFormsApp2\\WinFormsApp2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rafa\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
